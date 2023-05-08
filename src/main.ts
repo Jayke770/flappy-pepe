@@ -30,6 +30,10 @@ game.scene("game", () => {
 		pepe.jump(400)
 		game.play("jump")
 	})
+	game.onTouchStart(() => {
+		pepe.jump(400)
+		game.play("jump")
+	})
 	const makePipe = () => {
 		const offset = game.rand(-50, 50)
 		game.add(
@@ -67,7 +71,7 @@ game.scene("onboard", () => {
 		game.sprite("bg", { width: game.width(), height: game.height() })
 	])
 	game.add([
-		game.text("Flappy $PEPE"),
+		game.text("Flappy $PEPE", { size: 40 }),
 		game.pos(game.width() / 2, game.height() / 2),
 		game.origin("center")
 	])
@@ -78,9 +82,10 @@ game.scene("onboard", () => {
 		game.color(42, 254, 48),
 		game.scale(1),
 		game.area({ cursor: 'pointer' }),
+		game.onTouchStart(() => game.go("game"))
 	])
 	playBtn.onClick(() => {
 		game.go("game")
 	})
 })
-game.go("onboard")
+game.go("game")
