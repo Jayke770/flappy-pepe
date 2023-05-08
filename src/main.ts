@@ -88,4 +88,4 @@ game.scene("onboard", () => {
 		game.go("game")
 	})
 })
-game.go("game")
+game.go("onboard")
