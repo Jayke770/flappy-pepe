@@ -112,6 +112,19 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.17.18.tgz#3a8e57153905308db357fd02f57c180ee3a0a1fa"
   integrity sha512-qU25Ma1I3NqTSHJUOKi9sAH1/Mzuvlke0ioMJRthLXKm7JiSKVwFghlGbDLOO2sARECGhja4xYfRAZNPAkooYg==
 
+create-serve@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/create-serve/-/create-serve-1.0.1.tgz#a52ec4cbd2d0f776d3e42338fa1f0dae69080c59"
+  integrity sha512-cDAmBGhkwolS7ihq7SnPE8KwjYUZl5FaI9Pq5ZBwNelSKvFR9OoAA4/B5BfB/NC+eYaykBpX9RVMfuU4DHtrPw==
+
+esbuild-serve@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/esbuild-serve/-/esbuild-serve-1.0.1.tgz#c388c8ff184477ec6b6278d615da8d3177e5174f"
+  integrity sha512-VvYDThNuwg+YAuZC+RqAgw9TpEVGoDdcvm2mTL0lU+TxDXr+QGZfJ+zc6m7cXeJ940qijvdTSZl3mQbRGN4/PA==
+  dependencies:
+    create-serve "^1.0.1"
+    esbuild "^0.9.0"
+
 esbuild@^0.17.18:
   version "0.17.18"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.17.18.tgz#f4f8eb6d77384d68cd71c53eb6601c7efe05e746"
@@ -139,6 +152,11 @@ esbuild@^0.17.18:
     "@esbuild/win32-arm64" "0.17.18"
     "@esbuild/win32-ia32" "0.17.18"
     "@esbuild/win32-x64" "0.17.18"
+
+esbuild@^0.9.0:
+  version "0.9.7"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
+  integrity sha512-VtUf6aQ89VTmMLKrWHYG50uByMF4JQlVysb8dmg6cOgW8JnFCipmz7p+HNBl+RR3LLCuBxFGVauAe2wfnF9bLg==
 
 kaboom@^2000.2.10:
   version "2000.2.10"

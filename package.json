@@ -1,8 +1,9 @@
 {
 	"name": "flappy-pepe",
+	"type": "module",
 	"scripts": {
-		"build": "esbuild --bundle src/main.ts --outfile=www/main.js --minify",
-		"dev": "esbuild --bundle src/main.ts --outfile=www/main.js --servedir=www",
+		"build": "node esbuild.config.js",
+		"dev": "node esbuild.config.js -w",
 		"zip": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\"",
 		"check": "tsc"
 	},
@@ -11,6 +12,7 @@
 	},
 	"devDependencies": {
 		"esbuild": "^0.17.18",
+		"esbuild-serve": "^1.0.1",
 		"typescript": "^5.0.4"
 	}
 }
