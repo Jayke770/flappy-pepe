@@ -8,6 +8,7 @@ esbuildServe(
         entryPoints: ["src/main.ts"],
         bundle: true,
         outfile: "www/main.js",
+        minify: true
     },
     { root: "www" }
 );
