@@ -2811,7 +2811,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
     game.add([
       game.text("Game Over"),
       game.scale(0.8),
-      game.pos(game.width() / 2, game.height() / 2 - 80),
+      game.pos(game.width() / 2, game.height() / 2 - 50),
       game.origin("center")
     ]);
     game.add([
@@ -2819,7 +2819,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       game.pos(game.width() / 2, game.height() / 2 + 10),
       game.origin("center"),
       game.color(42, 254, 48),
-      game.scale(0.6),
+      game.scale(0.4),
       game.cursor("pointer"),
       game?.onTouchStart(() => game.go("game")),
       game?.onClick(() => game.go("game"))
