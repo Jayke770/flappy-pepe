@@ -2810,7 +2810,7 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
     ]);
     game.add([
       game.text("Game Over"),
-      game.scale(1),
+      game.scale(0.8),
       game.pos(game.width() / 2, game.height() / 2 - 80),
       game.origin("center")
     ]);
@@ -2825,5 +2825,5 @@ vec4 frag(vec3 pos, vec2 uv, vec4 color, sampler2D tex) {
       game?.onClick(() => game.go("game"))
     ]);
   });
-  game.go("game");
+  game.go("onboard");
 })();
