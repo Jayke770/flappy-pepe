@@ -2,16 +2,37 @@
 <html>
 
 <head>
-	<title>Flapp $PEPE</title>
+	<title>Flapepe</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <style>
-	html {
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
 		overflow: hidden;
+		background-color: #1d1d1d;
+	}
+
+	.game {
+		display: flex;
+		justify-content: center;
+		height: 100%;
+		position: relative;
+	}
+
+	#flapepe {
+		width: auto;
+		height: 100%;
 	}
 </style>
 
 <body>
+	<div class="game">
+		<canvas id="flapepe">
+		</canvas>
+	</div>
 	<script src="main.js"></script>
 </body>
 
