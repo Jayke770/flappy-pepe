@@ -1,5 +1,5 @@
 {
-	"name": "flappy-pepe",
+	"name": "flappy-pepe", 
 	"type": "module",
 	"scripts": {
 		"build": "node esbuild.config.js",
